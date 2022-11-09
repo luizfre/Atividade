@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <div id = "exemplo"></div>
+    <script>
+        let numero1 = Number(prompt("Digite o primeiro número."))
+        let resul = numero1 % 2;
+        let resul1;
+
+        if(resul == 0){
+            resul1 = "O " + numero1 + " é impar. ";
+        }else{
+            resul1 = "O " + numero1 + " é par. "; 
+        }
+        document.getElementById("exemplo").innerHTML = resul
+    </script>
+</body>
+</html>

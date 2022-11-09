@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <h1>Idade usando função SE.</h1>
+    <div id = "idade"></div>
+    <script>
+        let nomepessoa1 = prompt("Digite o nome da primeira pessoa.")
+        let anopessoa1 = Number(prompt("Digite a data de nascimento da primeira pessoa."))
+        let nomepessoa2 = prompt("Digite o nome da segunda pessoa.")
+        let anopessoa2 = Number(prompt("Digite a data de nascimento da segunda pessoa."))
+        let resul;
+        if(anopessoa1 > anopessoa2){
+            resul = "O " + nomepessoa1 + "é mais novo que " + nomepessoa2 + ".";
+        }else{
+            resul = "O " + nomepessoa2 + "é mais novo que " + nomepessoa1 + ".";
+        }
+
+        document.getElementById("idade").innerHTML = resul
+    </script>
+</body>
+</html>
